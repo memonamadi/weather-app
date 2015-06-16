@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>What's the Weather Like?</title>
+    <meta name="description" content="weather app, javascript, css, html, api, worldwide weather">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <section class="top-container">
+        <header>
+          <h1>What's the Weather Like Today?</h1>
+        </header>
+
+        <form class="form-container">
+          <input type="text" class="form city" placeholder="Enter a city name" value="">
+          <input type="radio" id="units_metric" name="units" value="metric"/> Metric
+          <input type="radio" id="units_imperial" name="units" value="imperial"/> Imperial</br>
+          <button class="submit">Get the weather</button>
+        </form>
+      </section>
+
+      <section class="weather-container">
+        <ul>
+          <li class="weather"></li>
+          <li class="icon"></li>
+          <li class="temperature"></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-56392242-2');ga('send','pageview');
+    </script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

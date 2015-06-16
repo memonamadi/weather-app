@@ -1,0 +1,76 @@
+// bower:scss
+// endbower
+
+// reset
+@import '_reset.scss';
+@import '_variables.scss';
+
+body {
+  background: #fafafa;
+  font-family: $font-stack;
+  color: $white;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  & .top-container {
+    background-color: $light-blue;
+    height: 600px;
+    & header h1 {
+      padding-top: 100px;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    & .form-container {
+      margin-top: 100px;
+      & .form {
+        display: block;
+        min-width: 600px;
+        height: 40px;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: none;
+        padding: 0 10px;
+        margin-bottom: 40px;
+        outline: none;
+        font-size: 1em;
+        color: $navy-blue;
+        font-weight: bold;
+      }
+      & input[type=radio] {
+        margin: 0 20px 100px;
+      }
+      & button {
+        border: none;
+        background: $white;
+        height: 40px;
+        width: 200px;
+        font-size: 1em;
+        color: $navy-blue;
+        font-weight: bold;
+      }
+    }
+  }
+  & .weather-container {
+    color: $navy-blue;
+    position: relative;
+    & ul {
+      margin: 0 auto;
+      padding: 200px 0;
+      & li {
+        font-size: 2em;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
