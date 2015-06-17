@@ -1,20 +1,14 @@
 function loadData() {
 
+	'use strict';
+
 	// global variables
-	var mainContainer = $('.container'),
-		formContainer = $('.form-container'),
-		input = $('.form'),
-		unitChecked = $('input[name="units"]:checked').val();
-		weatherContainer = $('weather-container');
-	
-	// api variables
-	var cityValue = $('input').val(),
-		apiKey = 'f2a8f79bcec996237f96dbc08ef55dc3',
+	var unitChecked = $('input[name="units"]:checked').val(),
+		cityValue = $('input').val(),
 		weatherUrl = 'http://api.openweathermap.org/data/2.5/weather',
 		weather = $('.weather'),
 		icon = $('.icon'),
-		temperature = $('.temperature'),
-		isItSummerYet = $('.isItSummerYet');
+		temperature = $('.temperature');
 	
 	// ajax request
 	$.ajax({
@@ -39,9 +33,7 @@ function loadData() {
 	});
 	
 	return false;
-	
-	init();
-};
+}
 
 $('.form-container').submit(loadData);
 
