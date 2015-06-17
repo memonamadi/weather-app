@@ -1,17 +1,26 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<html class="no-js"> 
   <head>
     <meta charset="utf-8">
     <title>What's the Weather Like?</title>
     <meta name="description" content="weather app, javascript, css, html, api, worldwide weather">
-
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.min.js"></script>
+    <!-- endbuild -->
   </head>
   <body>
-
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    
     <div class="container">
-
       <section class="top-container">
         <header>
           <h1>What's the Weather Like Today?</h1>
@@ -32,8 +41,12 @@
           <li class="temperature"></li>
         </ul>
       </section>
-
     </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script>
@@ -44,6 +57,10 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-56392242-2');ga('send','pageview');
     </script>
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-</body>
+    <!-- endbuild -->
+    
+  </body>
 </html>
